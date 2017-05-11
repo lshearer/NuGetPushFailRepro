@@ -1,0 +1,26 @@
+{
+    "version": "2.0.0",
+    "showOutput": "always",
+    "args": [],
+    "tasks": [
+        {
+            "taskName": "build",
+            "command": "dotnet",
+            "args": [
+                "build"
+            ],
+            "options": {
+                "cwd": "${workspaceRoot}/src/NugetPushIssueRepro"
+            },
+            "isBuildCommand": true,
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "taskName": "publish-test",
+            "command": "bash",
+            "args": [
+                "./test-publish.sh"
+            ]
+        }
+    ]
+}

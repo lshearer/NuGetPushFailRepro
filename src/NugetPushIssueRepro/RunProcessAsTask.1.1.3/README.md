@@ -1,0 +1,2 @@
+This is a stripped down version of https://github.com/jamesmanning/RunProcessAsTask/tree/a42a05d25be9bab2ebbe1e10994e1e046099ed0d.
+The package is awaiting the next tooling update before making a .NET Core compatible build - https://github.com/jamesmanning/RunProcessAsTask/issues/7.
