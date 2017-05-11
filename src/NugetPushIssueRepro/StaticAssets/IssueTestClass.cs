@@ -105,6 +105,8 @@ namespace NugetPushIssueRepro.StaticAssets
             Console.WriteLine("94");
             Console.WriteLine("95");
             Console.WriteLine("96");
+            Console.WriteLine("97");
+            Console.WriteLine("98");
 
         }
     }
