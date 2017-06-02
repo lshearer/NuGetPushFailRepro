@@ -11,7 +11,7 @@ To test building and pushing a NuGet package for each branch:
 - Run `./test-publish.sh` to build, pack, and push the package.
 
 
-# Results
+## Results
 
 `fail-*` branches fail for me when run locally on macOS v10.12.4, with v1.0.4 of the dotnet SDK (which includes v4.0.0.0 of NuGet Command Line). 
 
@@ -19,3 +19,6 @@ The failure is seen as an eventual timeout by the NuGet client (or a 500 from th
 
 I have noticed slight differences between my local machine and our linux build agent in the point at which the pushes fail, hence the reason for including multiple cases that should fail.
 
+## Workaround
+
+A dockerized repro and a workaround has been added to [this branch](https://github.com/lshearer/NuGetPushFailRepro/tree/fails-docker-repro-and-workaround). [Instructions for running the dockerized repro](https://github.com/lshearer/NuGetPushFailRepro/tree/fails-docker-repro-and-workaround#running-in-docker) have been added, as well as the [output of the test runs](https://github.com/lshearer/NuGetPushFailRepro/blob/fails-docker-repro-and-workaround/DockerTestResults.md).
