@@ -2,7 +2,7 @@
 
 Here are the results from running the Dockerized test, including the recompression workaround.
 
-## Workaround using unzip/zip
+## Workaround using 7zip
 This is the output of running 
 
 ```
