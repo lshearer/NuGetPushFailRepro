@@ -3,9 +3,9 @@
 set -ex
 
 cd src/NugetPushIssueRepro/
-rimraf ./build
-rimraf ./bin
-rimraf ./obj
+rm -rf ./build
+rm -rf ./bin
+rm -rf ./obj
 dotnet restore
 dotnet build --no-incremental -c Release
 
@@ -16,3 +16,4 @@ dotnet pack --no-build -o build -c Release --version-suffix publishtest`echo $RA
 
 dotnet nuget push ./build/*.nupkg --api-key 1234 --source http://localhost:5000/api/v2/package
 
+cd ../../
